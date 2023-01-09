@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>HTML CSS Capstone Project: Trip Survey</title>
+    </head>
+    <body>
+        
+        <nav>
+            <ul class="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/trip_survey.html">Trip Survey</a></li>
+                <li><a href="/external_links.html">External Links</a></li>
+                <li><a href="/photos.html">Photos</a></li>
+            </ul>
+        </nav>
+
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Trip Survey</legend>
+
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+
+                <div>
+                    <p>Select the City in Thailand You Visted:</p>
+
+                    <div class="city">
+                        <label for="city">City</label>
+                        <select id="city" name="select_city">
+                            <option value="bangkok">Bangkok</option>
+                            <option value="chiang_mai">Chiang Mai</option>
+                            <option value="phuket">Phuket</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <p>Which activity/activities would you try next time?</p>
+
+                    <div>
+                        <input type="checkbox" id="activityChoice1" name="activityChoice1" value="ziplining">
+                        <label for="activityChoice1">Ziplining</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="activityChoice2" name="activityChoice2" value="temple_tours">
+                        <label for="activityChoice2">Temple Tours</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="activityChoice3" name="activityChoice3" value="cooking_class">
+                        <label for="activityChoice3">Cooking Class</label>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <label class="cmnt-label" for="comments">Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+
+                <div class="submit_btn">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
